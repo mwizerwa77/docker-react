@@ -14,4 +14,4 @@ script:
       secure: d01a8278-dcb3-4b5a-9937-97020761e499
     app: dock-app
     on:
-      repo: mwizerwa77/docker-react
+      repo: https://git.heroku.com/dock-app.git
