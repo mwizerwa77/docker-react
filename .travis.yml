@@ -7,3 +7,11 @@ before_install:
 
 script: 
   - docker run -e CI=true mwizerwa77/docker-react npm run test -- --coverage
+
+  deploy: 
+    provider: heroku
+    api_key: 
+      secure: d01a8278-dcb3-4b5a-9937-97020761e499
+    app: dock-app
+    on:
+      repo: mwizerwa77/docker-react
